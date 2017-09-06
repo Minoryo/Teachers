@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+def hanbetu(num)
+  if (num % 2 === 0)
+    true
+  else
+    false
+  end
+end
+
+5.times do |no|
+  User.create(:name => "User#{no}", :teacher_flg => hanbetu(no))
+end
