@@ -16,3 +16,9 @@ end
 5.times do |no|
   User.create(:name => "User#{no}", :teacher_flg => hanbetu(no))
 end
+
+# users = User.order(:created_at).take(3)
+# 50.times do |no|
+#   content = "comment#{no}"
+#   users.each { |user| user.microposts.create!(content: content )}
+# end
