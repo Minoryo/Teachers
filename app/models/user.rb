@@ -2,7 +2,7 @@ class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
 
   def self.get_teachers
-    self.where(teacher_flg: true)
+    self.where(teacher_flg: true) 
   end
 
   def get_review_average
